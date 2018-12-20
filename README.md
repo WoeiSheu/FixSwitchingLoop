@@ -1,6 +1,15 @@
 # FixSwitchingLoop
 Fix network loop/bridge loop/switching loop.
 
+### Run Script
+```bash
+sudo chmod +x fix.sh
+sudo ./fix.sh
+```
+Or
+```bash
+sudo bash fix.sh
+```
 
 ### Problem Description
 Switching Loop Problem(SLP) is occurred frequently in school networks.
