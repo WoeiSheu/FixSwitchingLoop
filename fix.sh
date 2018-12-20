@@ -39,3 +39,5 @@ do
   echo $ip
   iphead=${ip:0:3}
 done
+
+echo $newmac >> newmac.txt
