@@ -29,10 +29,10 @@ do
   ### change mac address
   sudo ifconfig eth0 down
   sudo ifconfig eth0 hw ether $newmac
+  sudo ifconfig eth0 up
 
   ### wait some time to ensure that ip will change
-  sleep 6
-  sudo ifconfig eth0 up
+  sleep 2
   
   ### find new ip address
   ip=`ifconfig eth0 | awk '{print $2}' | sed -n '2p'`
