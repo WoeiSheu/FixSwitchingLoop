@@ -13,7 +13,8 @@ echo $ip
 iphead=${ip:0:3}
 
 #ifconfig eth0 up
-while [ "$iphead" == "192" ]
+#while [ "$iphead" == "192" ]
+while [ "$iphead" != "10." ]
 do
   ### generate new mac address
   rand=`cat /dev/urandom | sed 's/[^a-f0-9]//g' | strings -n 2 | head -n 6`
